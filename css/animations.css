@@ -6,6 +6,7 @@
 .hr,
 .description,
 .contact,
+main,
 .social li {
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
@@ -162,4 +163,10 @@
 }
 .social li:nth-child(5) {
   animation-delay: 1200ms;
+}
+
+main {
+  animation-name: slideUp;
+  animation-delay: 2000ms;
+  animation-timing-function: ease-out;
 }

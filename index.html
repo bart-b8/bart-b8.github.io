@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand">
     <link href="css/minireset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=0.0.3">
     <link rel="stylesheet" href="./css/animations.css">
     <script defer src="./js/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
@@ -14,59 +14,85 @@
   <body>
     <div id="wallpaper" class="wallpaper" data-image="images/wallpaper.jpg"></div>
     <div class="content">
-      <aside class="side">
-        <figure class="picture" id="picture">
-          <div class="picture-shadow"></div>
-          <img id="pictureImage" class="picture-image"
-                                 src="./images/bart@1x.jpg" 
-                                 alt="profile photograph of Bart."
-                                 srcset="./images/bart@1x.jpg 1x,
-                                            ./images/bart@2x.jpg 2x"
-                                 width="320"
-                                 height="320">
-        </figure>
-      </aside> 
-      <main class="about">
-        <h1 class="name">
-          Hi, I'm Bart Decoutere
-        </h1>
-        <p class="job">
-        Programmer
-        </p>
-        <hr class="hr">
-        <div class="description">
-          <p>
-          Learning Software Development by studying CS engineering 
-          at the University of Ghent and working as a Programmer.
-          </p>
+      <header>
+        <div class="side">
+          <figure class="picture" id="picture">
+            <div class="picture-shadow"></div>
+            <img id="pictureImage" class="picture-image"
+                                   src="./images/bart@1x.jpg" 
+                                   alt="profile photograph of Bart."
+                                   srcset="./images/bart@1x.jpg 1x,
+                                              ./images/bart@2x.jpg 2x"
+                                   width="320"
+                                   height="320">
+          </figure>
         </div> 
-        <div class="contact">
-          <a href="mailto:bart.decoutere@gmail.com" class="button">Get in touch</a>
+        <div class="about">
+          <h1 class="name">
+            Hi, I'm Bart Decoutere
+          </h1>
+          <p class="job">
+          Programmer
+          </p>
+          <hr class="hr">
+          <div class="description">
+            <p>
+            Learning Software Development by studying CS engineering 
+            at the University of Ghent and working as a Programmer.
+            </p>
+          </div> 
+          <div class="contact">
+            <a href="mailto:bart.decoutere@gmail.com" class="button">Get in touch</a>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://github.com/bart-b8" target=_blank>
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/bart-decoutere/" target=_blank>
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="social">
-          <li>
-            <a>
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
+      </header>
+      <main>
+        <h1>Portfolio</h1>
+        <div class="projects">
+          <article class="project">
+            <aside class="project-side">
+              <img class="project-picture" src="images/placeholder.png" alt="Placeholder"
+                                                                        width="180px" height="180px">
+              <ul class="links">
+                <li><a><i class="fab fa-github"></i></a></li>
+              </ul>
+            </aside>
+            <div class="project-content">
+              <h2>Name Project</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+            </div>
+          </article>
+          <article class="project">
+            <aside class="project-side">
+              <ul class="links">
+                <li><a><i class="fab fa-github"></i></a></li>
+              </ul>
+            </aside>
+            <div class="project-content">
+              <h2>Name Project</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+            </div>
+          </article>
+        </div>
       </main>
     </div>
     <noscript>
       <style>
-        .wallpaper {
-          animation-name: zoomOut;
-        }
+.wallpaper {
+  animation-name: zoomOut;
+}
         .picture-image {
           animation-name: picImage;
         }
