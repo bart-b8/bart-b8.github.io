@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bart Decoutere</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand">
+    <link href="css/minireset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <script defer src="./js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  </head>
+  <body>
+    <div id="wallpaper" class="wallpaper" data-image="images/wallpaper.jpg"></div>
+    <div class="content">
+      <aside class="side">
+        <figure class="picture" id="picture">
+          <div class="picture-shadow"></div>
+          <img id="pictureImage" class="picture-image"
+                                 src="./images/bart@1x.jpg" 
+                                 alt="profile photograph of Bart."
+                                 srcset="./images/bart@1x.jpg 1x,
+                                            ./images/bart@2x.jpg 2x"
+                                 width="320"
+                                 height="320">
+        </figure>
+      </aside> 
+      <main class="about">
+        <h1 class="name">
+          Hi, I'm Bart Decoutere
+        </h1>
+        <p class="job">
+        Programmer
+        </p>
+        <hr class="hr">
+        <div class="description">
+          <p>
+          Learning Software Development by studying CS engineering 
+          at the University of Ghent and working as a Programmer.
+          </p>
+        </div> 
+        <div class="contact">
+          <a href="mailto:bart.decoutere@gmail.com" class="button">Get in touch</a>
+        </div>
+        <ul class="social">
+          <li>
+            <a>
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <noscript>
+      <style>
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+        .picture-image {
+          animation-name: picImage;
+        }
+        .picture-shadow {
+          animation-name: picShadow;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
