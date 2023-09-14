@@ -180,7 +180,6 @@ main h1 {
 article.project {
   background-color: rgba(0,0,0,0.1);
   border-radius: 1em;
-  display: flex;
   transition-property: background-color;
   margin-left: auto;
   margin-right: auto;
@@ -232,7 +231,8 @@ article.project:hover {
 }
 
 .project-side {
-  flex-grow: 0;
+  float: left;
+  margin: 11px;
 }
 
 .project-picture {
@@ -240,10 +240,11 @@ article.project:hover {
 }
 
 .project-content {
+  text-align: justify;
   margin-left: 0.8rem;
-  max-width: 45rem;
+  max-width: 55rem;
   margin-left: 0.8rem;
-  width: 85%
+  width: 95%
 }
 
 /* 4. Responsiveness */
