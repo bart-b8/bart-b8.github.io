@@ -122,9 +122,6 @@ h2 {
   width: 4rem;
 }
 
-.description {
-  font-size: 1.5rem;
-}
 
 .contact {
   display: inline-block;
@@ -263,6 +260,10 @@ article.project:hover {
     margin-bottom: 3rem;
     width: 100%;
   }
+
+  .description {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -285,5 +286,8 @@ article.project:hover {
   .about {
     flex-grow: 1;
     flex-shrink: 1;
+  }
+  .description {
+    font-size: 1.5rem;
   }
 }
